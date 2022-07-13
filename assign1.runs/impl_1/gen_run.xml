@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1653076865">
+  <File Type="ROUTE-PWR" Name="seq_core_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="seq_core.tcl"/>
+  <File Type="BITSTR-BMM" Name="seq_core_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="seq_core_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="seq_core_reports.tcl"/>
+  <File Type="OPT-DCP" Name="seq_core_opt.dcp"/>
+  <File Type="OPT-DRC" Name="seq_core_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="seq_core.hwdef"/>
+  <File Type="PWROPT-DCP" Name="seq_core_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="seq_core_placed.dcp"/>
+  <File Type="PLACE-IO" Name="seq_core_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="seq_core_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="seq_core_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="seq_core_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="seq_core_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="seq_core.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="seq_core_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="seq_core.bin"/>
+  <File Type="PHYSOPT-DCP" Name="seq_core_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="seq_core.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="seq_core_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="seq_core_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="seq_core_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="seq_core_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="seq_core_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="seq_core_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="seq_core.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="seq_core_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="seq_core.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="seq_core_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="seq_core_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="seq_core.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="seq_core_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="seq_core_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="seq_core_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="seq_core_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="seq_core_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="seq_core_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="seq_core_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="seq_core_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="seq_core_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="seq_core_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="seq_core_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="seq_core_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="seq_core.bit"/>
+  <File Type="BITSTR-RBT" Name="seq_core.rbt"/>
+  <File Type="BITSTR-NKY" Name="seq_core.nky"/>
+  <File Type="BG-DRC" Name="seq_core.drc"/>
+  <File Type="RDI-RDI" Name="seq_core.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/seq_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/opcode.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="IsGlobalInclude" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_memory.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_memory.mem">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../users/bianca.palade/desktop/assignment1/assign1.2 - copy/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seq_core"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

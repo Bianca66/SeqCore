@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr 29 23:45:27 2022
+# Process ID: 5176
+# Current directory: C:/Users/bianca.palade/Desktop/assignment1/assign1.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10916 C:\Users\bianca.palade\Desktop\assignment1\assign1.2\assign1.xpr
+# Log file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2/vivado.log
+# Journal file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/bianca.palade/Desktop/assignment1/assign1.2/assign1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/bianca.palade/Desktop/assignment1/assign1.2/testbench_behav.wcfg
+source seq_core_test.tcl
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim

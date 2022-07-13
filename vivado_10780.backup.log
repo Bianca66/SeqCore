@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May  7 21:21:31 2022
+# Process ID: 10780
+# Current directory: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13968 C:\Users\bianca.palade\Desktop\assignment1\assign1.2 - Copy\assign1.xpr
+# Log file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/vivado.log
+# Journal file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 719.707 ; gain = 114.199
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  7 22:04:45 2022...

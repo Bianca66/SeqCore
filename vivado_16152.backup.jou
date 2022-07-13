@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 20 22:57:55 2022
+# Process ID: 16152
+# Current directory: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4600 C:\Users\bianca.palade\Desktop\assignment1\assign1.2 - Copy\assign1.xpr
+# Log file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/vivado.log
+# Journal file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} [get_ports clk]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_2
+file mkdir {C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/constrs_1/new}
+close [ open {C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/constrs_1/new/ct.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/constrs_1/new/ct.xdc}}
+set_property target_constrs_file {C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/constrs_1/new/ct.xdc} [current_fileset -constrset]
+save_constraints -force

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 20 23:01:10 2022
+# Process ID: 12804
+# Current directory: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.runs/synth_1
+# Command line: vivado.exe -log seq_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seq_core.tcl
+# Log file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.runs/synth_1/seq_core.vds
+# Journal file: C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seq_core.tcl -notrace

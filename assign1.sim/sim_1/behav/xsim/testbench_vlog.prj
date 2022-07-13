@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib "C:/Users/bianca.palade/assign1/assign1/assign1.srcs/sources_1/new/opcode.v" --include "../../../../assign1.srcs/sources_1/new" \
+"../../../../assign1.srcs/sources_1/new/seq_core.v" \
+"../../../../assign1.srcs/sim_1/new/seq_core_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

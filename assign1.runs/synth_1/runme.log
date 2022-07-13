@@ -1,0 +1,464 @@
+
+*** Running vivado
+    with args -log seq_core.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source seq_core.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source seq_core.tcl -notrace
+Command: synth_design -top seq_core -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2584 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 472.918 ; gain = 176.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'seq_core' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:71]
+	Parameter A_SIZE bound to: 10 - type: integer 
+	Parameter D_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:171]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:192]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:157]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:259]
+WARNING: [Synth 8-151] case item 7'b0010000 is unreachable [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:313]
+WARNING: [Synth 8-151] case item 7'b0010000 is unreachable [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:317]
+WARNING: [Synth 8-151] case item 7'b0010000 is unreachable [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:321]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:312]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:332]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'seq_core' (1#1) [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:71]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 535.289 ; gain = 238.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 535.289 ; gain = 238.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 535.289 ; gain = 238.707
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:259]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:164]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 535.289 ; gain = 238.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 16    
+	   4 Input     10 Bit        Muxes := 4     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 73    
+	  13 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module seq_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 16    
+	   4 Input     10 Bit        Muxes := 4     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 73    
+	  13 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:302]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:126]
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP max_count0, operation Mode is: A*B.
+DSP Report: operator max_count0 is absorbed into DSP max_count0.
+DSP Report: operator max_count0 is absorbed into DSP max_count0.
+DSP Report: Generating DSP max_count_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register max_count_reg is absorbed into DSP max_count_reg.
+DSP Report: operator max_count0 is absorbed into DSP max_count_reg.
+DSP Report: operator max_count0 is absorbed into DSP max_count_reg.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[31]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[30]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[29]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[28]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[27]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[26]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[25]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[24]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[23]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[22]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[21]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[20]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[19]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[18]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[17]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[16]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[15]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[14]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[13]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[12]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[11]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[10]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[9]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[8]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[7]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[6]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[5]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[4]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[3]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[2]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[1]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'count_reg[0]__0/Q' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.srcs/sources_1/new/seq_core.v:125]
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[47]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[46]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[45]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[44]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[43]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[42]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[41]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[40]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[39]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[38]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[37]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[36]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[35]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[34]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[33]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[32]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[31]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[30]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[29]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[28]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[27]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[26]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[25]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[24]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[23]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[22]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[21]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[20]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[19]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[18]) is unused and will be removed from module seq_core.
+WARNING: [Synth 8-3332] Sequential element (max_count_reg[17]) is unused and will be removed from module seq_core.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|seq_core    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|seq_core    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|seq_core    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|seq_core    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|seq_core    | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|seq_core    | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    34|
+|3     |DSP48E1 |     5|
+|4     |LUT1    |    56|
+|5     |LUT2    |    72|
+|6     |LUT3    |    92|
+|7     |LUT4    |    69|
+|8     |LUT5    |    90|
+|9     |LUT6    |   329|
+|10    |MUXF7   |    64|
+|11    |FDCE    |   266|
+|12    |FDRE    |    38|
+|13    |IBUF    |    52|
+|14    |OBUF    |    12|
+|15    |OBUFT   |    42|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1222|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 844.223 ; gain = 547.641
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'seq_core' is not ideal for floorplanning, since the cellview 'seq_core' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 35 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 844.223 ; gain = 547.641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.223 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bianca.palade/Desktop/assignment1/assign1.2 - Copy/assign1.runs/synth_1/seq_core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file seq_core_utilization_synth.rpt -pb seq_core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 20 23:01:50 2022...
